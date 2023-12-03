@@ -9,10 +9,10 @@ OBJ = $(SRC:$(SDIR)/%.c=$(ODIR)/%.o)
 
 CXX = g++
 CXXFLAGS = -I$(IDIR)
-CXXFLAGS += -g -O0
+CXXFLAGS += -g -O0 -std=c++17
 CXXFLAGS += -Iinclude
 CFLAGS += -Wall
-SCPATH = /usr/local/systemc-2.3.3
+SCPATH = /00_ycl/04_install/systemc-2.3.4
 LIBS = -lm
 
 $(TARGET): $(OBJ)
